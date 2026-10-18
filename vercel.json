@@ -1,4 +1,5 @@
 {
+  "cleanUrls": true,
   "rewrites": [
     { "source": "/como-funciona", "destination": "/pages/como-funciona.html" },
     { "source": "/termos", "destination": "/pages/termos.html" }

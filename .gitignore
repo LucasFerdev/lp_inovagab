@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.vercel/
+.DS_Store
+Thumbs.db
+
+# Captura retida: iniciais identificadoras do usuário. As versões de origem ficam fora do Git.
+assets/images/tutorial-operador/03-inicio.png
+assets/images/tutorial-operador/01-login.png
+assets/images/tutorial-operador/02-cadastro.png
+assets/images/tutorial-operador/05-revisao.jpeg
+assets/images/tutorial-operador/04-estrategia-categoria.jpg

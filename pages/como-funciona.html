@@ -21,13 +21,141 @@
         <nav class="site-header__navigation" id="primary-navigation" aria-label="Navegação principal" data-navigation><a class="site-header__link" href="/">Início</a><a class="site-header__link site-header__link--active" href="/como-funciona" aria-current="page">Como funciona</a><a class="site-header__link" href="/#beneficios">Benefícios</a><a class="site-header__link" href="#acesso">Acesso</a></nav>
       </div>
     </header>
-    <main class="home-hero" id="acesso">
-      <div class="home-hero__inner">
-        <div class="home-hero__content">
-          <h1 class="home-hero__title">Da ideia ao <span>impacto.</span></h1>
-          <p class="home-hero__description">Registre sua sugestão, acompanhe a avaliação dos gestores e veja as ideias aprovadas ganharem forma como projetos para transformar a empresa.</p>
-          <a class="button button--primary" href="/">Voltar ao início <span class="button__arrow" aria-hidden="true">→</span></a>
-        </div>
+    <main class="operator-tutorial" id="acesso">
+      <div class="operator-tutorial__inner">
+        <header class="tutorial-intro">
+          <p class="tutorial-intro__eyebrow">Comece aqui</p>
+          <h1 class="tutorial-intro__title">Da ideia ao <span>impacto.</span></h1>
+          <p class="tutorial-intro__description">Registre sua sugestão, acompanhe a avaliação dos gestores e veja as ideias aprovadas ganharem forma como projetos para transformar a empresa. Abaixo, conheça a experiência do perfil Operador passo a passo.</p>
+        </header>
+
+        <nav class="tutorial-profiles" aria-label="Perfis do InovaGAB">
+          <div class="tutorial-profiles__list" aria-label="Perfil disponível e perfis futuros">
+            <a class="tutorial-profile is-active" href="#conteudo-operador" aria-current="location">Operador</a>
+            <button class="tutorial-profile is-disabled" type="button" disabled>Gestor <small>Em breve</small></button>
+            <button class="tutorial-profile is-disabled" type="button" disabled>Liderança <small>Em breve</small></button>
+          </div>
+        </nav>
+
+        <section class="operator-panel" id="conteudo-operador" aria-labelledby="operador-title">
+          <div class="tutorial-section-heading">
+            <p class="tutorial-section-heading__eyebrow">Perfil Operador</p>
+            <h2 id="operador-title">Do acesso ao acompanhamento</h2>
+            <p>As etapas abaixo descrevem somente o que está visível nas capturas fornecidas. Algumas imagens precisam ser adicionadas ou substituídas antes da publicação.</p>
+          </div>
+
+          <ol class="tutorial-steps" aria-label="Passos do perfil Operador">
+            <li class="tutorial-step" id="passo-1">
+              <figure class="tutorial-step__visual">
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-operador/01-login.jpg" alt="Tela móvel de acesso ao InovaGAB, com campos de e-mail corporativo e senha, opção de recuperação de senha e links para acessar ou criar uma conta." width="852" height="1846" fetchpriority="high">
+                <figcaption>Captura de login sem valores preenchidos.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">01</span>
+                <h3>Acesse sua conta</h3>
+                <p>A tela mostra campos para e-mail corporativo e senha, além de uma opção para recuperar a senha. O endereço do aplicativo e o procedimento de recuperação não aparecem nas informações disponíveis.</p>
+              </div>
+            </li>
+
+            <li class="tutorial-step tutorial-step--reverse" id="passo-2">
+              <figure class="tutorial-step__visual">
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-operador/02-cadastro.jpg" alt="Tela móvel de criação de conta, com campos vazios para nome, e-mail corporativo, empresa ou unidade, senha e confirmação; mostra opção para código de acesso, checkbox desmarcado e links para Termos de Uso e Política de Privacidade." width="852" height="1846" loading="lazy">
+                <figcaption>Formulário em branco, sem dados pessoais. O checkbox aparece desmarcado; os destinos dos links de termos e privacidade precisam ser confirmados.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">02</span>
+                <h3>Confira a tela de criação de conta</h3>
+                <p>O formulário mostra campos para nome completo, e-mail corporativo, empresa ou unidade, senha e confirmação, além de um campo opcional de código de acesso e links para Termos de Uso e Política de Privacidade. A captura não informa quem pode se cadastrar; os destinos dos links devem ser confirmados antes de orientar seu uso.</p>
+              </div>
+            </li>
+
+            <li class="tutorial-step" id="passo-3">
+              <figure class="tutorial-step__visual">
+                <div class="tutorial-shot" role="img" aria-label="Espaço reservado para captura da área inicial do Operador; a imagem contém iniciais de usuário e não será publicada">
+                  <span class="tutorial-shot__window" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <div class="tutorial-shot__placeholder">
+                    <span class="tutorial-shot__icon" aria-hidden="true">
+                      <svg viewBox="0 0 48 48" fill="none"><path d="m7 22 17-14 17 14v19H9V22m11 19V28h9v13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <strong>Área inicial</strong>
+                    <span>Nova captura sem identificação de usuário necessária</span>
+                  </div>
+                </div>
+                <figcaption>A captura inicial mostra atalhos para enviar uma ideia, ver ideias e consultar estratégias.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">03</span>
+                <h3>Conheça a área inicial</h3>
+                <p>Na tela inicial do Operador aparecem o atalho “Enviar nova ideia”, a opção “Ver minhas ideias” e um convite para conhecer estratégias ativas. A captura mostra uma mensagem de que ainda não há ideias enviadas.</p>
+              </div>
+            </li>
+
+            <li class="tutorial-step tutorial-step--reverse" id="passo-4">
+              <figure class="tutorial-step__visual">
+                <div class="tutorial-shot" role="img" aria-label="Espaço reservado para captura da etapa Estratégia e Categoria; a tela enviada contém um nome de programa cuja publicação ainda não foi autorizada">
+                  <span class="tutorial-shot__window" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <div class="tutorial-shot__placeholder">
+                    <span class="tutorial-shot__icon" aria-hidden="true">
+                      <svg viewBox="0 0 48 48" fill="none"><path d="M8 12h32M8 24h32M8 36h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="18" cy="12" r="4" fill="var(--color-white-soft)" stroke="currentColor" stroke-width="2"/><circle cx="30" cy="24" r="4" fill="var(--color-white-soft)" stroke="currentColor" stroke-width="2"/><circle cx="21" cy="36" r="4" fill="var(--color-white-soft)" stroke="currentColor" stroke-width="2"/></svg>
+                    </span>
+                    <strong>Estratégia e categoria</strong>
+                    <span>Captura retida até validar o nome do programa exibido</span>
+                  </div>
+                </div>
+                <figcaption>Captura não publicada: além do valor de teste, mostra “Programa de Inovação 2026”, pendente de autorização institucional.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">04</span>
+                <h3>Escolha estratégia e categoria</h3>
+                <p>O primeiro passo do formulário mostra estratégias vinculadas e categorias para a sugestão. A captura enviada foi retida porque também exibe um nome de programa cuja divulgação precisa de aprovação.</p>
+              </div>
+            </li>
+
+            <li class="tutorial-step" id="passo-5">
+              <figure class="tutorial-step__visual">
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-operador/05-revisao.jpg" alt="Tela móvel da etapa Revisão, com resumo da estratégia, categoria, título, problema, solução proposta e benefícios da sugestão, além dos botões Anterior e Enviar." width="738" height="1600" loading="lazy">
+                <figcaption>A captura usa valores de demonstração visivelmente marcados como “Teste”; não representa uma sugestão real.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">05</span>
+                <h3>Revise antes de enviar</h3>
+                <p>A etapa de revisão apresenta estratégia, categoria, título, problema, solução proposta e benefícios. O texto exibido informa que, após o envio, a ideia passa por uma análise técnica; os campos preenchidos na captura estão identificados como dados de teste.</p>
+              </div>
+            </li>
+
+            <li class="tutorial-step tutorial-step--reverse" id="passo-6">
+              <figure class="tutorial-step__visual">
+                <div class="tutorial-shot" role="img" aria-label="Captura da lista ou acompanhamento de ideias ainda não fornecida">
+                  <span class="tutorial-shot__window" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <div class="tutorial-shot__placeholder">
+                    <span class="tutorial-shot__icon" aria-hidden="true">
+                      <svg viewBox="0 0 48 48" fill="none"><path d="M8 39h32M12 32V22m12 10V10m12 22V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="m10 18 12-8 12 4 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <strong>Minhas ideias</strong>
+                    <span>Captura desta tela ainda não fornecida</span>
+                  </div>
+                </div>
+                <figcaption>A tela de acompanhamento não está entre as capturas fornecidas.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">06</span>
+                <h3>Acompanhe o andamento</h3>
+                <p>A tela de revisão diz que o status pode ser acompanhado em “Minhas Sugestões”, enquanto a tela inicial apresenta “Minhas ideias”. Como os nomes divergem e a tela de acompanhamento não foi fornecida, confirme a nomenclatura e o caminho com a equipe do produto.</p>
+              </div>
+            </li>
+          </ol>
+
+          <aside class="tutorial-next" aria-labelledby="tutorial-next-title">
+            <div>
+              <p class="tutorial-section-heading__eyebrow">Próximo passo</p>
+              <h2 id="tutorial-next-title">Continue explorando o InovaGAB</h2>
+              <p>Veja novamente o resumo do fluxo e as informações institucionais disponíveis na página inicial.</p>
+            </div>
+            <a class="button button--primary" href="/#como-funciona">Voltar à página inicial <span class="button__arrow" aria-hidden="true">→</span></a>
+          </aside>
+
+          <p class="tutorial-pending-note"><strong>Acesso ao aplicativo:</strong> o endereço oficial não está configurado neste projeto. Nenhum link de login foi criado.</p>
+        </section>
       </div>
     </main>
   </body>
