@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#0a3a8c">
     <meta name="description" content="Conheça como uma ideia pode se transformar em projeto no InovaGAB.">
     <title>Como funciona — InovaGAB</title>
-    <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/assets/icons/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -16,9 +16,9 @@
   <body class="home-page">
     <header class="site-header">
       <div class="site-header__inner">
-        <a class="site-header__brand" href="/" aria-label="InovaGAB — início"><span class="site-header__brand-name">INOVAGAB</span><img class="site-header__brand-mark" src="/assets/icons/wing.svg" alt=""></a>
+        <a class="site-header__brand" href="/" aria-label="InovaGAB — início"><span class="site-header__brand-name">INOVAGAB</span><img class="site-header__brand-mark" src="/assets/icons/wing.png" alt=""></a>
         <button class="site-header__menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle><span class="site-header__menu-line"></span><span class="site-header__menu-line"></span><span class="site-header__menu-line"></span></button>
-        <nav class="site-header__navigation" id="primary-navigation" aria-label="Navegação principal" data-navigation><a class="site-header__link" href="/">Início</a><a class="site-header__link site-header__link--active" href="/como-funciona" aria-current="page">Como funciona</a><a class="site-header__link" href="/#beneficios">Benefícios</a><a class="site-header__link" href="#acesso">Acesso</a></nav>
+        <nav class="site-header__navigation" id="primary-navigation" aria-label="Navegação principal" data-navigation><a class="site-header__link" href="/">Início</a><a class="site-header__link site-header__link--active" href="/pages/como-funciona.html" aria-current="page">Como funciona</a><a class="site-header__link" href="/#beneficios">Benefícios</a><a class="site-header__link" href="#acesso">Acesso</a></nav>
       </div>
     </header>
     <main class="operator-tutorial" id="acesso">
@@ -41,7 +41,7 @@
           <div class="tutorial-section-heading">
             <p class="tutorial-section-heading__eyebrow">Perfil Operador</p>
             <h2 id="operador-title">Do acesso ao acompanhamento</h2>
-            <p>As etapas abaixo descrevem somente o que está visível nas capturas fornecidas. Algumas imagens precisam ser adicionadas ou substituídas antes da publicação.</p>
+            <p>As etapas abaixo descrevem o que está visível nas capturas do perfil Operador.</p>
           </div>
 
           <ol class="tutorial-steps" aria-label="Passos do perfil Operador">
@@ -71,16 +71,7 @@
 
             <li class="tutorial-step" id="passo-3">
               <figure class="tutorial-step__visual">
-                <div class="tutorial-shot" role="img" aria-label="Espaço reservado para captura da área inicial do Operador; a imagem contém iniciais de usuário e não será publicada">
-                  <span class="tutorial-shot__window" aria-hidden="true"><i></i><i></i><i></i></span>
-                  <div class="tutorial-shot__placeholder">
-                    <span class="tutorial-shot__icon" aria-hidden="true">
-                      <svg viewBox="0 0 48 48" fill="none"><path d="m7 22 17-14 17 14v19H9V22m11 19V28h9v13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </span>
-                    <strong>Área inicial</strong>
-                    <span>Nova captura sem identificação de usuário necessária</span>
-                  </div>
-                </div>
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-operador/03-inicio.png" alt="Tela inicial do Operador no celular, com saudação, atalho para enviar uma nova ideia e o acompanhamento das sugestões." width="852" height="1847" loading="lazy">
                 <figcaption>A captura inicial mostra atalhos para enviar uma ideia, ver ideias e consultar estratégias.</figcaption>
               </figure>
               <div class="tutorial-step__content">
@@ -92,22 +83,13 @@
 
             <li class="tutorial-step tutorial-step--reverse" id="passo-4">
               <figure class="tutorial-step__visual">
-                <div class="tutorial-shot" role="img" aria-label="Espaço reservado para captura da etapa Estratégia e Categoria; a tela enviada contém um nome de programa cuja publicação ainda não foi autorizada">
-                  <span class="tutorial-shot__window" aria-hidden="true"><i></i><i></i><i></i></span>
-                  <div class="tutorial-shot__placeholder">
-                    <span class="tutorial-shot__icon" aria-hidden="true">
-                      <svg viewBox="0 0 48 48" fill="none"><path d="M8 12h32M8 24h32M8 36h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="18" cy="12" r="4" fill="var(--color-white-soft)" stroke="currentColor" stroke-width="2"/><circle cx="30" cy="24" r="4" fill="var(--color-white-soft)" stroke="currentColor" stroke-width="2"/><circle cx="21" cy="36" r="4" fill="var(--color-white-soft)" stroke="currentColor" stroke-width="2"/></svg>
-                    </span>
-                    <strong>Estratégia e categoria</strong>
-                    <span>Captura retida até validar o nome do programa exibido</span>
-                  </div>
-                </div>
-                <figcaption>Captura não publicada: além do valor de teste, mostra “Programa de Inovação 2026”, pendente de autorização institucional.</figcaption>
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-operador/04-estrategia-categoria.jpg" alt="Tela móvel da etapa Estratégia e Categoria, com a estratégia vinculada e as categorias da sugestão: Atendimento, Segurança, Operação, Manutenção, Tecnologia, Sustentabilidade, Pessoas e Outros." width="472" height="1024" loading="lazy">
+                <figcaption>A etapa mostra a estratégia vinculada e as categorias da sugestão. O valor “Teste De estratégia” é de demonstração.</figcaption>
               </figure>
               <div class="tutorial-step__content">
                 <span class="tutorial-step__number" aria-hidden="true">04</span>
                 <h3>Escolha estratégia e categoria</h3>
-                <p>O primeiro passo do formulário mostra estratégias vinculadas e categorias para a sugestão. A captura enviada foi retida porque também exibe um nome de programa cuja divulgação precisa de aprovação.</p>
+                <p>O primeiro passo do formulário mostra estratégias vinculadas e categorias para a sugestão. A captura também exibe o nome do programa associado à estratégia selecionada.</p>
               </div>
             </li>
 
@@ -125,22 +107,13 @@
 
             <li class="tutorial-step tutorial-step--reverse" id="passo-6">
               <figure class="tutorial-step__visual">
-                <div class="tutorial-shot" role="img" aria-label="Captura da lista ou acompanhamento de ideias ainda não fornecida">
-                  <span class="tutorial-shot__window" aria-hidden="true"><i></i><i></i><i></i></span>
-                  <div class="tutorial-shot__placeholder">
-                    <span class="tutorial-shot__icon" aria-hidden="true">
-                      <svg viewBox="0 0 48 48" fill="none"><path d="M8 39h32M12 32V22m12 10V10m12 22V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="m10 18 12-8 12 4 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </span>
-                    <strong>Minhas ideias</strong>
-                    <span>Captura desta tela ainda não fornecida</span>
-                  </div>
-                </div>
-                <figcaption>A tela de acompanhamento não está entre as capturas fornecidas.</figcaption>
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-operador/06-minhas-ideias.jpg" alt="Tela móvel de Minhas ideias, com o total de ideias enviadas, duas sugestões com status Enviada e Aprovada, e o botão Nova ideia." width="472" height="1024" loading="lazy">
+                <figcaption>A lista mostra as ideias enviadas, o status de cada uma e o atalho para registrar uma nova ideia. Os títulos exibidos são de demonstração.</figcaption>
               </figure>
               <div class="tutorial-step__content">
                 <span class="tutorial-step__number" aria-hidden="true">06</span>
                 <h3>Acompanhe o andamento</h3>
-                <p>A tela de revisão diz que o status pode ser acompanhado em “Minhas Sugestões”, enquanto a tela inicial apresenta “Minhas ideias”. Como os nomes divergem e a tela de acompanhamento não foi fornecida, confirme a nomenclatura e o caminho com a equipe do produto.</p>
+                <p>A tela Minhas ideias reúne as contribuições enviadas, com status, categoria, estratégia e data de atualização. O botão “Nova ideia” abre um novo registro.</p>
               </div>
             </li>
           </ol>

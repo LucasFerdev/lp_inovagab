@@ -10,7 +10,7 @@
 		<meta property="og:description" content="Compartilhe ideias, acompanhe projetos e ajude a transformar o futuro da empresa.">
 		<meta property="og:image" content="/assets/images/home.png">
 		<title>InovaGAB — Sua ideia impulsiona o futuro</title>
-		<link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+		<link rel="icon" href="/assets/icons/favicon.png" type="image/png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
 			<div class="site-header__inner">
 				<a class="site-header__brand" href="/" aria-label="InovaGAB — início">
 					<span class="site-header__brand-name">INOVAGAB</span>
-					<img class="site-header__brand-mark" src="/assets/icons/wing.svg" alt="">
+					<img class="site-header__brand-mark" src="/assets/icons/wing.png" alt="">
 				</a>
 
 				<button class="site-header__menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle>
@@ -33,9 +33,9 @@
 
 				<nav class="site-header__navigation" id="primary-navigation" aria-label="Navegação principal" data-navigation>
 					<a class="site-header__link site-header__link--active" href="/" aria-current="page">Início</a>
-					<a class="site-header__link" href="/como-funciona">Como funciona</a>
+					<a class="site-header__link" href="/pages/como-funciona.html">Como funciona</a>
 					<a class="site-header__link" href="#beneficios">Benefícios</a>
-					  <a class="site-header__link" href="/como-funciona#acesso">Acesso</a>
+					  <a class="site-header__link" href="/pages/como-funciona.html#acesso">Acesso</a>
 				</nav>
 			</div>
 		</header>
@@ -48,7 +48,7 @@
 					<div class="home-hero__content" data-reveal>
 						<h1 class="home-hero__title" id="hero-title">Sua ideia pode impulsionar o futuro da nossa <span>empresa.</span></h1>
 						<p class="home-hero__description">O InovaGAB é a plataforma que conecta colaboradores, gestores e liderança em um fluxo seguro, auditável e mensurável de inovação.</p>
-						<a class="button button--primary" href="/como-funciona">Comece agora <span class="button__arrow" aria-hidden="true">→</span></a>
+						<a class="button button--primary" href="/pages/como-funciona.html">Comece agora <span class="button__arrow" aria-hidden="true">→</span></a>
 					</div>
 
 					<div class="home-hero__visual" data-hero-visual data-reveal>
@@ -143,34 +143,52 @@
 
 			<section class="home-platform" id="plataforma" aria-labelledby="platform-title">
 				<div class="home-platform__inner">
-					<div class="home-section-heading home-section-heading--light" data-reveal>
-						<p class="home-section-heading__eyebrow">Conheça a plataforma</p>
-						<h2 class="home-section-heading__title" id="platform-title">Conheça o InovaGAB por dentro.</h2>
-						<p class="home-section-heading__description">O ambiente reúne o registro, a análise e o acompanhamento das ideias de acordo com o perfil de acesso.</p>
-					</div>
+					<div class="palm">
+						<div class="palm__intro" data-reveal>
+							<span class="palm__accent" aria-hidden="true"></span>
+							<h2 class="palm__title" id="platform-title">Tudo na palma<br> da sua mão</h2>
+							<p class="palm__lead">Acesse, acompanhe e gerencie suas ideias e projetos de forma simples, segura e intuitiva.</p>
+							<ul class="palm__points">
+								<li>
+									<span class="palm__point-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11c.4.4.7.9.8 1.5h4.4c.1-.6.4-1.1.8-1.5A6 6 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
+									<span><strong>Envie suas ideias</strong><span>Aponte oportunidades e faça a diferença.</span></span>
+								</li>
+								<li>
+									<span class="palm__point-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19h16M7 16V11m5 5V7m5 9V9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+									<span><strong>Acompanhe o progresso</strong><span>Veja cada etapa do seu projeto em tempo real.</span></span>
+								</li>
+								<li>
+									<span class="palm__point-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3 5 6v6c0 4.2 2.8 7.2 7 8.5 4.2-1.3 7-4.3 7-8.5V6l-7-3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+									<span><strong>Tudo em um só lugar</strong><span>Mais agilidade, transparência e colaboração.</span></span>
+								</li>
+							</ul>
+						</div>
 
-					<div class="platform-gallery" aria-label="Espaços reservados para capturas reais da plataforma por perfil">
-						<div class="platform-gallery__main" data-reveal>
-							<div class="platform-placeholder platform-placeholder--main">
-								<svg class="platform-placeholder__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="6" y="9" width="36" height="29" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M6 16h36M12 12.5h.1m4 0h.1m4 0h.1" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M18 26h12m-12 5h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-								<p class="platform-placeholder__label">Operador · área inicial</p>
-								<p class="platform-placeholder__note">Captura retida: exibe nome e iniciais de usuário</p>
-							</div>
-						</div>
-						<div class="platform-gallery__side">
-							<div class="platform-placeholder" data-reveal>
-								<svg class="platform-placeholder__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M14 9h14l7 7v23H14a3 3 0 0 1-3-3V12a3 3 0 0 1 3-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M27 9v8h8m-15 7h10m-10 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-								<p class="platform-placeholder__label">Gestor · painel inicial</p>
-								<p class="platform-placeholder__note">Captura retida: mostra avatar e dados de ideias</p>
-							</div>
-							<div class="platform-placeholder" data-reveal>
-								<svg class="platform-placeholder__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M8 37h32M13 31V21m11 10V11m11 20V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="m10 17 12-7 11 4 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-								<p class="platform-placeholder__label">Liderança · indicadores</p>
-								<p class="platform-placeholder__note">Captura retida: avatar e indicadores financeiros</p>
-							</div>
+						<figure class="palm__device" data-reveal>
+							<img src="/assets/images/plataforma/operador-phone.png" alt="Celular com a área inicial do Operador, com saudação, atalho para enviar uma nova ideia e o acompanhamento das sugestões." width="706" height="1511">
+						</figure>
+
+						<div class="palm__roles">
+							<article class="palm__role" data-reveal>
+								<img src="/assets/images/plataforma/gestor-phone.png" alt="Celular com a análise de ideias do Gestor, mostrando totais e uma sugestão em análise." width="280" height="318" loading="lazy">
+								<div class="palm__role-copy">
+									<span class="palm__role-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.2" stroke="currentColor" stroke-width="1.7"/><path d="M6 19.2v-1.1a6 6 0 0 1 12 0v1.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+									<h3>Gestor</h3>
+									<p class="palm__role-label">Análise e acompanhamento</p>
+									<p>Visualize, avalie e acompanhe as ideias e projetos da sua equipe com informações claras e objetivas.</p>
+								</div>
+							</article>
+							<article class="palm__role" data-reveal>
+								<img src="/assets/images/plataforma/lideranca-phone.png" alt="Celular com o painel da Liderança, com lucro estimado, retorno sobre o investimento e projetos por status." width="275" height="326" loading="lazy">
+								<div class="palm__role-copy">
+									<span class="palm__role-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="8" cy="9" r="2.4" stroke="currentColor" stroke-width="1.7"/><circle cx="16" cy="9" r="2.4" stroke="currentColor" stroke-width="1.7"/><path d="M3.8 18.2v-.6a4.2 4.2 0 0 1 4.2-4.2M20.2 18.2v-.6a4.2 4.2 0 0 0-4.2-4.2M8.2 18.5v-.4a3.8 3.8 0 0 1 7.6 0v.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+									<h3>Liderança</h3>
+									<p class="palm__role-label">Visão estratégica</p>
+									<p>Acompanhe os resultados, analise indicadores e tome decisões com base em dados reais e atualizados.</p>
+								</div>
+							</article>
 						</div>
 					</div>
-					<p class="home-platform__disclaimer">As capturas recebidas foram examinadas, mas não serão publicadas sem validação: a imagem nomeada como início do Operador mostra outra etapa e um programa sem autorização; a tela inicial anterior identifica um usuário; as telas do Gestor e da Liderança mostram avatares e dados de ideias ou indicadores. Solicite capturas corretas, anonimizadas e autorizadas para substituir os espaços acima.</p>
 				</div>
 			</section>
 
@@ -211,7 +229,7 @@
 						<h2 class="home-cta__title" id="cta-title">Sua ideia pode começar agora.</h2>
 						<p class="home-cta__description">Conheça o fluxo do InovaGAB e veja como uma contribuição pode avançar.</p>
 					</div>
-					<a class="button button--primary" href="/como-funciona">Comece agora <span class="button__arrow" aria-hidden="true">→</span></a>
+					<a class="button button--primary" href="/pages/como-funciona.html">Comece agora <span class="button__arrow" aria-hidden="true">→</span></a>
 				</div>
 			</section>
 
