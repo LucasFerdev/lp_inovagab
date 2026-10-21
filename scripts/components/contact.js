@@ -1,4 +1,4 @@
-const ENDPOINT = "https://formsubmit.co/ajax/lucasferdev01@gmail.com";
+const ENDPOINT = "https://formsubmit.co/ajax/evelynrodriguesdev@gmail.com";
 
 export function initContact() {
   const form = document.querySelector("[data-contact-form]");

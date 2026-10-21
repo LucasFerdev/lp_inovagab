@@ -26,14 +26,14 @@
         <header class="tutorial-intro">
           <p class="tutorial-intro__eyebrow">Comece aqui</p>
           <h1 class="tutorial-intro__title">Da ideia ao <span>impacto.</span></h1>
-          <p class="tutorial-intro__description">O perfil Operador explica como entrar, cadastrar e enviar uma ideia. O perfil Gestor mostra como analisar o que já chegou e decidir o próximo passo.</p>
+          <p class="tutorial-intro__description">O perfil Operador explica como entrar, cadastrar e enviar uma ideia. O perfil Gestor mostra como analisar o que já chegou. O perfil Liderança acompanha diretrizes, resultados e a carteira de projetos.</p>
         </header>
 
         <nav class="tutorial-profiles" aria-label="Perfis do InovaGAB">
           <div class="tutorial-profiles__list" aria-label="Perfis do tutorial">
             <a class="tutorial-profile is-active" href="#conteudo-operador" data-profile-link aria-current="page">Operador</a>
             <a class="tutorial-profile" href="#conteudo-gestor" data-profile-link>Gestor</a>
-            <button class="tutorial-profile is-disabled" type="button" disabled>Liderança <small>Em breve</small></button>
+            <a class="tutorial-profile" href="#conteudo-lideranca" data-profile-link>Liderança</a>
           </div>
         </nav>
 
@@ -218,6 +218,98 @@
               <p>Cadastro, estratégia, categoria e acompanhamento de quem enviou a sugestão ficam naquele tutorial.</p>
             </div>
             <a class="button button--primary" href="#conteudo-operador">Ver tutorial do Operador <span class="button__arrow" aria-hidden="true">→</span></a>
+          </aside>
+        </section>
+
+        <section class="operator-panel tutorial-panel" id="conteudo-lideranca" data-profile-panel hidden aria-labelledby="lideranca-title">
+          <div class="tutorial-section-heading">
+            <p class="tutorial-section-heading__eyebrow">Perfil Liderança</p>
+            <h2 id="lideranca-title">Da diretriz ao resultado</h2>
+            <p>Estas telas mostram o que a liderança acompanha depois que a ideia já existe: diretrizes do grupo, visão do resultado e a carteira de projetos.</p>
+            <p class="tutorial-crosslink">O envio da ideia está no <a href="#conteudo-operador">tutorial do Operador</a>. Aprovar ou rejeitar está no <a href="#conteudo-gestor">tutorial do Gestor</a>. Os números e textos das capturas são de demonstração.</p>
+          </div>
+
+          <ol class="tutorial-steps" aria-label="Passos do perfil Liderança">
+            <li class="tutorial-step" id="lideranca-passo-1">
+              <figure class="tutorial-step__visual">
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-lideranca/01-painel.png" alt="Painel da Liderança com visão executiva, resultado consolidado e indicadores de projetos e ideias aprovadas." width="264" height="525" fetchpriority="high">
+                <figcaption>A visão executiva reúne o resultado do período e os indicadores do dia.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">01</span>
+                <h3>Veja o resultado do período</h3>
+                <p>A área inicial mostra o resultado consolidado, o investimento, o retorno e os totais de projetos, atrasos e ideias aprovadas.</p>
+              </div>
+            </li>
+
+            <li class="tutorial-step tutorial-step--reverse" id="lideranca-passo-2">
+              <figure class="tutorial-step__visual">
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-lideranca/02-portfolio.png" alt="Portfólio de projetos da Liderança, com ideias aguardando a gestão e projetos que exigem atenção." width="265" height="525" loading="lazy">
+                <figcaption>A carteira separa o que está planejado, concluído ou pedindo atenção.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">02</span>
+                <h3>Acompanhe a carteira</h3>
+                <p>O portfólio distribui os projetos entre em andamento, planejados, concluídos e atrasados. Abaixo aparecem as ideias que ainda aguardam a gestão e os projetos que pedem prazo.</p>
+              </div>
+            </li>
+
+            <li class="tutorial-step" id="lideranca-passo-3">
+              <figure class="tutorial-step__visual">
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-lideranca/03-estrategias.png" alt="Lista de estratégias do grupo, com busca e filtros de ativas e rascunhos." width="221" height="480" loading="lazy">
+                <figcaption>As diretrizes do grupo ficam juntas, com ativas e rascunhos separados.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">03</span>
+                <h3>Consulte as diretrizes</h3>
+                <p>A lista reúne as estratégias do grupo. Dá para buscar e filtrar entre todas, ativas e rascunhos, e abrir uma para continuar a edição.</p>
+              </div>
+            </li>
+
+            <li class="tutorial-step tutorial-step--reverse" id="lideranca-passo-4">
+              <figure class="tutorial-step__visual">
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-lideranca/04-nova-diretriz.png" alt="Formulário para cadastrar uma nova diretriz, com opções de salvar rascunho ou criar e ativar." width="223" height="480" loading="lazy">
+                <figcaption>A nova diretriz pode ficar em rascunho ou ser ativada na hora.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">04</span>
+                <h3>Cadastre uma diretriz</h3>
+                <p>A liderança registra a estratégia do grupo e escolhe salvar como rascunho ou criar e ativar. Quem envia uma ideia escolhe uma estratégia já existente; esse passo está no tutorial do Operador.</p>
+              </div>
+            </li>
+
+            <li class="tutorial-step" id="lideranca-passo-5">
+              <figure class="tutorial-step__visual">
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-lideranca/05-detalhe-estrategia.png" alt="Detalhe de uma estratégia ativa, com campanha, resultado consolidado e ideias por status." width="224" height="480" loading="lazy">
+                <figcaption>A estratégia ativa mostra a campanha, o resultado e como as ideias se distribuem.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">05</span>
+                <h3>Abra uma estratégia ativa</h3>
+                <p>O detalhe traz a campanha, o resultado consolidado e a quantidade de ideias em cada status. É a leitura do que já está ligado à diretriz.</p>
+              </div>
+            </li>
+
+            <li class="tutorial-step tutorial-step--reverse" id="lideranca-passo-6">
+              <figure class="tutorial-step__visual">
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-lideranca/06-resultado.png" alt="Resultado consolidado da estratégia e a ideia vinculada, com atalho para ver a ideia." width="224" height="480" loading="lazy">
+                <figcaption>O resultado fica ao lado da ideia vinculada. A avaliação dela permanece com o gestor.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">06</span>
+                <h3>Leia o resultado e a ideia ligada</h3>
+                <p>A mesma estratégia mostra investimento, retorno, lucro e a ideia vinculada. O atalho abre o registro; a decisão de aprovar ou rejeitar continua no tutorial do Gestor.</p>
+              </div>
+            </li>
+          </ol>
+
+          <aside class="tutorial-next" aria-labelledby="lideranca-next-title">
+            <div>
+              <p class="tutorial-section-heading__eyebrow">Nos outros perfis</p>
+              <h2 id="lideranca-next-title">Envio e decisão ficam em outros tutoriais</h2>
+              <p>O cadastro e o envio da sugestão estão no Operador. A análise, a prioridade e a rejeição estão no Gestor.</p>
+            </div>
+            <a class="button button--primary" href="#conteudo-gestor">Ver tutorial do Gestor <span class="button__arrow" aria-hidden="true">→</span></a>
           </aside>
         </section>
 
