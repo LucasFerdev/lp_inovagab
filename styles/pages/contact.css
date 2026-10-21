@@ -40,6 +40,18 @@
   background: linear-gradient(145deg, #8ec5ff, var(--color-blue-dark) 60%, #082f72);
 }
 
+.team-card:nth-child(3) .team-card__avatar {
+  background: linear-gradient(160deg, #5aa6ff, var(--color-blue-medium) 45%, var(--color-blue-deep));
+}
+
+.team-card:nth-child(4) .team-card__avatar {
+  background: linear-gradient(160deg, var(--color-cyan), #0d4eae 55%, #072a68);
+}
+
+.team-card:nth-child(5) .team-card__avatar {
+  background: linear-gradient(160deg, #b9d7ff, var(--color-blue-medium) 50%, #0a3278);
+}
+
 .team-card__avatar {
   display: grid;
   width: 8.5rem;
