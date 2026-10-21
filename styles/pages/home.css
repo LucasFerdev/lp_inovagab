@@ -997,6 +997,12 @@
   text-underline-offset: 0.15em;
 }
 
+.operator-ranking {
+  margin-top: clamp(var(--space-12), 8vw, 6rem);
+  padding-top: clamp(var(--space-10), 6vw, 4.5rem);
+  border-top: 1px solid var(--color-divider);
+}
+
 .tutorial-steps {
   display: grid;
   gap: clamp(var(--space-10), 7vw, 5rem);
@@ -1012,6 +1018,11 @@
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   gap: clamp(var(--space-6), 5vw, 3.5rem);
   scroll-margin-top: var(--space-6);
+}
+
+.tutorial-step--copy {
+  grid-template-columns: minmax(0, 40rem);
+  justify-content: center;
 }
 
 .tutorial-step--reverse .tutorial-step__visual {
