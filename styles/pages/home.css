@@ -971,11 +971,30 @@
   line-height: var(--line-height-tight);
 }
 
-.tutorial-section-heading > p:last-child,
+.tutorial-section-heading > p,
 .tutorial-next > div > p:last-child {
   color: var(--color-text-blue);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
+}
+
+.tutorial-panel {
+  scroll-margin-top: var(--header-height);
+}
+
+.tutorial-crosslink {
+  max-width: 40rem;
+  margin: var(--space-4) auto 0;
+  color: #405875;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-base);
+}
+
+.tutorial-crosslink a {
+  color: var(--color-blue-medium);
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 .tutorial-steps {

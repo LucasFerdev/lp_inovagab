@@ -2,6 +2,7 @@
   "cleanUrls": true,
   "rewrites": [
     { "source": "/como-funciona", "destination": "/pages/como-funciona" },
-    { "source": "/termos", "destination": "/pages/termos" }
+    { "source": "/termos", "destination": "/pages/termos" },
+    { "source": "/contato", "destination": "/pages/contato" }
   ]
 }

@@ -18,7 +18,7 @@
       <div class="site-header__inner">
         <a class="site-header__brand" href="/" aria-label="InovaGAB — início"><span class="site-header__brand-name">INOVAGAB</span><img class="site-header__brand-mark" src="/assets/icons/wing.png" alt=""></a>
         <button class="site-header__menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle><span class="site-header__menu-line"></span><span class="site-header__menu-line"></span><span class="site-header__menu-line"></span></button>
-        <nav class="site-header__navigation" id="primary-navigation" aria-label="Navegação principal" data-navigation><a class="site-header__link" href="/">Início</a><a class="site-header__link site-header__link--active" href="/pages/como-funciona.html" aria-current="page">Como funciona</a><a class="site-header__link" href="/#beneficios">Benefícios</a><a class="site-header__link" href="#acesso">Acesso</a></nav>
+        <nav class="site-header__navigation" id="primary-navigation" aria-label="Navegação principal" data-navigation><a class="site-header__link" href="/">Início</a><a class="site-header__link site-header__link--active" href="/pages/como-funciona.html" aria-current="page">Como funciona</a><a class="site-header__link" href="/#beneficios">Benefícios</a><a class="site-header__link" href="#acesso">Acesso</a><a class="site-header__link" href="/pages/contato.html">Contato</a></nav>
       </div>
     </header>
     <main class="operator-tutorial" id="acesso">
@@ -26,18 +26,18 @@
         <header class="tutorial-intro">
           <p class="tutorial-intro__eyebrow">Comece aqui</p>
           <h1 class="tutorial-intro__title">Da ideia ao <span>impacto.</span></h1>
-          <p class="tutorial-intro__description">Registre sua sugestão, acompanhe a avaliação dos gestores e veja as ideias aprovadas ganharem forma como projetos para transformar a empresa. Abaixo, conheça a experiência do perfil Operador passo a passo.</p>
+          <p class="tutorial-intro__description">O perfil Operador explica como entrar, cadastrar e enviar uma ideia. O perfil Gestor mostra como analisar o que já chegou e decidir o próximo passo.</p>
         </header>
 
         <nav class="tutorial-profiles" aria-label="Perfis do InovaGAB">
-          <div class="tutorial-profiles__list" aria-label="Perfil disponível e perfis futuros">
-            <a class="tutorial-profile is-active" href="#conteudo-operador" aria-current="location">Operador</a>
-            <button class="tutorial-profile is-disabled" type="button" disabled>Gestor <small>Em breve</small></button>
+          <div class="tutorial-profiles__list" aria-label="Perfis do tutorial">
+            <a class="tutorial-profile is-active" href="#conteudo-operador" data-profile-link aria-current="page">Operador</a>
+            <a class="tutorial-profile" href="#conteudo-gestor" data-profile-link>Gestor</a>
             <button class="tutorial-profile is-disabled" type="button" disabled>Liderança <small>Em breve</small></button>
           </div>
         </nav>
 
-        <section class="operator-panel" id="conteudo-operador" aria-labelledby="operador-title">
+        <section class="operator-panel tutorial-panel" id="conteudo-operador" data-profile-panel aria-labelledby="operador-title">
           <div class="tutorial-section-heading">
             <p class="tutorial-section-heading__eyebrow">Perfil Operador</p>
             <h2 id="operador-title">Do acesso ao acompanhamento</h2>
@@ -127,8 +127,101 @@
             <a class="button button--primary" href="/#como-funciona">Voltar à página inicial <span class="button__arrow" aria-hidden="true">→</span></a>
           </aside>
 
-          <p class="tutorial-pending-note"><strong>Acesso ao aplicativo:</strong> o endereço oficial não está configurado neste projeto. Nenhum link de login foi criado.</p>
         </section>
+
+        <section class="operator-panel tutorial-panel" id="conteudo-gestor" data-profile-panel hidden aria-labelledby="gestor-title">
+          <div class="tutorial-section-heading">
+            <p class="tutorial-section-heading__eyebrow">Perfil Gestor</p>
+            <h2 id="gestor-title">Da análise à decisão</h2>
+            <p>Estas telas mostram o que o gestor faz com a sugestão depois que ela chega. O acesso, o cadastro e o envio da ideia continuam no tutorial do Operador.</p>
+            <p class="tutorial-crosslink">Os campos da ideia são os mesmos que o operador preenche. O significado de cada um está no <a href="#conteudo-operador">tutorial do Operador</a>. Os números e textos das capturas são de demonstração.</p>
+          </div>
+
+          <ol class="tutorial-steps" aria-label="Passos do perfil Gestor">
+            <li class="tutorial-step" id="gestor-passo-1">
+              <figure class="tutorial-step__visual">
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-gestor/01-painel.png" alt="Painel inicial do Gestor, com totais de ideias recebidas, em análise, aprovadas e projetos, e uma ideia aguardando análise." width="276" height="546" fetchpriority="high">
+                <figcaption>O painel resume o dia e lista o que espera uma decisão.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">01</span>
+                <h3>Veja o resumo do dia</h3>
+                <p>A área inicial reúne ideias recebidas, em análise, aprovadas e projetos. Abaixo, “Ideias para análise” mostra o que ainda pede uma decisão.</p>
+              </div>
+            </li>
+
+            <li class="tutorial-step tutorial-step--reverse" id="gestor-passo-2">
+              <figure class="tutorial-step__visual">
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-gestor/02-detalhe-ideia.png" alt="Detalhe de uma ideia recebida, com problema identificado, solução proposta, benefícios esperados e autor." width="298" height="546" loading="lazy">
+                <figcaption>O gestor lê a sugestão já enviada, sem preencher o formulário de novo.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">02</span>
+                <h3>Leia a ideia recebida</h3>
+                <p>O detalhe mostra problema, solução, benefícios e autor. É a leitura do que o operador registrou, não um novo envio.</p>
+              </div>
+            </li>
+
+            <li class="tutorial-step" id="gestor-passo-3">
+              <figure class="tutorial-step__visual">
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-gestor/03-avaliacao.png" alt="Avaliação da ideia, com recomendação da inteligência artificial, prioridade de 1 a 5 e botões para aprovar ou rejeitar." width="280" height="546" loading="lazy">
+                <figcaption>A análise da IA aparece como recomendação. A decisão fica com o gestor.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">03</span>
+                <h3>Avalie e decida</h3>
+                <p>Dá para colocar a ideia em análise, definir a prioridade e aprovar ou rejeitar. A análise da inteligência artificial não substitui essa decisão.</p>
+              </div>
+            </li>
+
+            <li class="tutorial-step tutorial-step--reverse" id="gestor-passo-4">
+              <figure class="tutorial-step__visual">
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-gestor/04-confirmar-aprovacao.png" alt="Diálogo de confirmação para aprovar a ideia com a prioridade selecionada." width="262" height="492" loading="lazy">
+                <figcaption>A aprovação pede confirmação da prioridade escolhida.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">04</span>
+                <h3>Confirme a aprovação</h3>
+                <p>Antes de concluir, o aplicativo confirma a prioridade marcada na avaliação.</p>
+              </div>
+            </li>
+
+            <li class="tutorial-step" id="gestor-passo-5">
+              <figure class="tutorial-step__visual">
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-gestor/05-confirmar-rejeicao.png" alt="Diálogo de confirmação da rejeição, com campo para o motivo." width="262" height="494" loading="lazy">
+                <figcaption>A rejeição só segue depois de uma justificativa.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">05</span>
+                <h3>Justifique a rejeição</h3>
+                <p>Ao rejeitar, a tela pede o motivo. Sem esse texto, a confirmação permanece indisponível.</p>
+              </div>
+            </li>
+
+            <li class="tutorial-step tutorial-step--reverse" id="gestor-passo-6">
+              <figure class="tutorial-step__visual">
+                <img class="tutorial-shot tutorial-shot--capture" src="/assets/images/tutorial-gestor/06-cancelar-projeto.png" alt="Detalhe do projeto com progresso atual e diálogo para confirmar o cancelamento." width="264" height="496" loading="lazy">
+                <figcaption>O cancelamento do projeto pede confirmação porque a ação é irreversível.</figcaption>
+              </figure>
+              <div class="tutorial-step__content">
+                <span class="tutorial-step__number" aria-hidden="true">06</span>
+                <h3>Cancele um projeto, se for o caso</h3>
+                <p>No detalhe do projeto aparecem o progresso e as ações de resultado, conclusão ou cancelamento. Cancelar exige uma confirmação à parte.</p>
+              </div>
+            </li>
+          </ol>
+
+          <aside class="tutorial-next" aria-labelledby="gestor-next-title">
+            <div>
+              <p class="tutorial-section-heading__eyebrow">Antes desta etapa</p>
+              <h2 id="gestor-next-title">O envio da ideia está no Operador</h2>
+              <p>Cadastro, estratégia, categoria e acompanhamento de quem enviou a sugestão ficam naquele tutorial.</p>
+            </div>
+            <a class="button button--primary" href="#conteudo-operador">Ver tutorial do Operador <span class="button__arrow" aria-hidden="true">→</span></a>
+          </aside>
+        </section>
+
+        <p class="tutorial-pending-note"><strong>Acesso ao aplicativo:</strong> o endereço oficial não está configurado neste projeto. Nenhum link de login foi criado.</p>
       </div>
     </main>
   </body>
